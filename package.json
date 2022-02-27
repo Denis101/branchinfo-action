@@ -1,0 +1,50 @@
+{
+  "name": "branchinfo-action",
+  "version": "1.0.0",
+  "description": "Make decisions based on branch & diff info",
+  "homepage": "https://github.com/Denis101/branchinfo-action#readme",
+  "main": "index.js",
+  "keywords": [
+    "github",
+    "actions",
+    "branch",
+    "info",
+    "branchinfo"
+  ],
+  "repository": "git@github.com:Denis101/branchinfo-action.git",
+  "bugs": {
+    "url": "https://github.com/Denis101/branchinfo-action/issues"
+  },
+  "author": "Denis Craig <admin@deniscraig.com>",
+  "license": "GNU GPL V3",
+  "scripts": {
+    "build": "tsc && ncc build && node lib/misc/generate-docs.js",
+    "format": "prettier --write '**/*.ts'",
+    "format-check": "prettier --check '**/*.ts'",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@actions/cache": "^1.0.9",
+    "@actions/core": "^1.2.6",
+    "@actions/exec": "^1.0.1",
+    "@actions/io": "^1.1.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^12.7.12",
+    "@types/uuid": "^3.4.6",
+    "@typescript-eslint/parser": "^5.1.0",
+    "@vercel/ncc": "^0.33.3",
+    "eslint": "^7.32.0",
+    "eslint-plugin-github": "^4.3.2",
+    "eslint-plugin-jest": "^25.2.2",
+    "jest": "^27.3.0",
+    "jest-circus": "^27.3.0",
+    "js-yaml": "^3.13.1",
+    "prettier": "^1.19.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  }
+}
